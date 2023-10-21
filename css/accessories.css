@@ -1,0 +1,170 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url(../images/accessoriesbg.jpg);
+    background-size:cover;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#logo{
+    position: fixed;
+    bottom: 86.8vh;
+    font-size: 5vh;
+    
+}
+header{
+ position: fixed;
+ left: 0%;
+ right: 0%;
+ background-color: rgba(0, 0, 0);
+
+}   
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+} 
+#home{
+    position: relative;
+    left: 40vh;
+}
+#collection{
+position: relative;
+left: 20vh;
+}
+#accessories{
+    position: relative;
+    right: 1vh;
+
+}
+#contact{
+    position:relative;
+    left: 20vh;
+}
+nav a,header a{
+    font-size: larger;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    
+}   
+
+ nav a:hover {
+   background-color: white;
+   color: black;
+    transition: 0.8s;
+ }
+ 
+ #boxhead{
+    height: 10vh;
+ }
+ 
+ /* section 1 ********************************************************************************************** */
+ .section1{
+    color: white;
+    
+    }
+
+.section1head{
+        margin-top: 40px;
+        text-align: center;
+    
+    }   
+    /* section 2 ********************************************************************************************** */
+    .section2{
+        margin-top: 10px;
+       }
+    #imgbox{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+
+  .accessoriesimg{
+        width: 40vh;
+        margin-inline: 40px;
+        margin-bottom: 10px;
+        margin-top: 40px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    
+ figcaption{
+        color: white;
+        text-align: center;
+    
+    }
+    /* Section 3 **************************************************************************************** */
+#section3{
+    margin-top: 5em;
+    background-color: black;
+
+}
+
+#section3img{
+    width: 100%;
+
+
+}
+
+    /* FOOTER SECTION ************************************************************************************ */
+
+ footer{   
+    background-color: #6b0306;
+    padding:35px;
+    height: 42vh;
+    text-align: center;
+}
+#footerhead{
+    color: white;
+    padding: 10px;
+    margin-bottom:8vh ;
+    word-spacing: 4px;
+}
+#email{
+    border: none;
+     padding: 15px;
+     width: 40vh;
+     border-radius: 5px;
+     font-size: 15px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-seri;
+     margin-bottom: 60px;
+}
+button{
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+/* Icon **************************************************************** */
+#icon1,#icon2,#icon3,#icon4{
+    margin: 20px;   
+    position: relative;
+    width: 7vh;
+    left: 0px;
+    background-color: white;
+    padding:2px;
+    border-radius: 50%;  
+    
+}
+
+    

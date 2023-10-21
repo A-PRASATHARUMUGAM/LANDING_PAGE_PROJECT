@@ -1,0 +1,258 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+}
+body{
+background-image: url(../images/homebg.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat:no-repeat ;
+    background-position: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* header ************************************************************************************************* */
+#logo{
+    position: fixed;
+    bottom: 86.8vh;
+    font-size: 5vh;
+
+}
+header{
+ position: fixed;
+ left: 0%;
+ right: 0%;
+ background-color: rgba(0, 0, 0);
+}
+   
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+} 
+#home{
+    position: relative;
+    left: 40vh;
+}
+#collection{
+position: relative;
+left: 20vh;
+}
+#accessories{
+    position: relative;
+   right: 1vh;
+
+}
+#contact{
+    position:relative;
+    left: 20vh;
+}
+nav a,header a{
+    font-size: larger;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    
+}   
+
+ nav a:hover{
+   background-color: white;
+   color: black;
+    transition: 0.8s;
+ }
+ 
+ #boxhead{
+    height: 10vh;
+
+ }
+ /* Section 1 ************************************************************************************************* */
+
+#section1{   
+    padding-right: 8vh;
+    height: 45em;
+    animation: animate 10s ease-in-out infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+ 
+}
+@keyframes animate{
+    0%,100%{
+        background-image: url(../images/homebg1.jpg);
+     }
+     25%{
+        background-image: url(../images/homebg2.jpg);
+
+     }  
+     60%{
+        background-image: url(../images/homebg3.jpg);
+     }
+     
+ 
+}
+
+#buttonshop{
+    font-size: x-large;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;  
+    color: black;
+    margin-left: 30vh;
+    animation: animates 7s ease-in-out infinite;    
+
+}
+
+#mechanical {
+
+     text-transform: uppercase;
+     word-spacing: 4px;
+     padding: 4vh ;
+      width: 100%;
+      font-weight: bold;
+      color:lightcyan;
+      font-family: monospace;
+      text-align: center;
+      animation: animates 7s ease-in-out infinite;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       margin-bottom: 55vh;
+
+}
+@keyframes animates {
+
+    0%,100%{
+        color: black ;
+       background-color: white;
+
+    }
+    60%{
+        color: white;
+        background-color: black;
+        
+    }
+    60%
+    { 
+        background-color: black;
+        color: white;
+    }
+}
+
+
+/* Section 2 ************************************************************************************** */
+#section2{
+background-color:lightgray;
+    color: black;
+    margin-top: 40vh;
+   height: 42em;
+   text-align: center;
+
+}
+hr{
+    height: 2px;
+ background-color: black;
+ margin-bottom: 25px;
+}
+
+#keyboardimgbox{
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    height: 50vh;
+
+
+}
+.keyboardimg{
+    width: 20em;
+    border-radius:20px;
+    margin: 2px;
+    margin-bottom: 25px;
+    box-shadow:7.5px  13px rgb(0, 0, 0,0.4);
+    border: 1px solid black;
+   
+}
+figcaption{
+   font-weight: bold;
+}
+#section2head{
+    padding: 20px;
+}
+#viewall{
+    font-size: larger;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    color:black;
+    background-color: white;
+    font-weight: bold;
+    animation: animates 7s ease-in-out infinite; 
+}
+/* Section 3 **************************************************************************************** */
+#section3{
+    margin-top: 20em;
+    background-color: black;
+
+}
+
+#section3img{
+    width: 100%;
+
+
+}
+/* FOOTER SECTION ************************************************************************************ */
+
+footer{   
+    background-color: #6b0306;
+    padding:35px;
+    height: 43vh;
+    text-align: center;
+}
+#footerhead{
+    color: white;
+    padding: 10px;
+    margin-bottom:8vh ;
+    word-spacing: 4px;
+}
+#email{
+    border: none;
+     padding: 15px;
+     width: 40vh;
+     border-radius: 5px;
+     font-size: 15px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-seri;
+     margin-bottom: 60px;
+}
+button{
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;   
+}
+/* Icon **************************************************************** */
+
+
+#icon1,#icon2,#icon3,#icon4{
+    margin: 20px;   
+    position: relative;
+    width: 7vh;
+    left: 0px;
+    background-color: white;
+    padding:2px;
+    border-radius: 50%;  
+    
+}

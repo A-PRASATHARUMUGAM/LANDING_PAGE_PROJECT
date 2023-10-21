@@ -1,0 +1,182 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url(../images/contactbg5.jpg);
+    background-size:cover;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#logo{
+    position: fixed;
+    bottom: 86.8vh;
+    font-size: 5vh;
+
+}
+header{
+ position: fixed;
+ left: 0%;
+ right: 0%;
+ background-color: rgba(0, 0, 0);
+
+}
+   
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+} 
+#home{
+    position: relative;
+    left: 40vh;
+}
+#collection{
+position: relative;
+left: 20vh;
+}
+#accessories{
+    position: relative;
+    right: 1vh;
+
+}
+#contact{
+    position:relative;
+    left: 20vh;
+}
+nav a,header a{
+    font-size: larger;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    
+}   
+
+ nav a:hover {
+   background-color: white;
+   color: black;
+    transition: 0.8s;
+ }
+ 
+ #boxhead{
+    height: 10vh;
+ }
+ /* section 1 form ************************************************************************************** */
+
+.section1{
+    padding-top:10px; 
+    padding-bottom:8    px;
+    margin-bottom: 60px;
+    height: 40em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20vh;
+    
+}
+#contactbox{
+  background-color: rgba(0, 0, 0,0.9);
+    text-align: center;
+    padding: 20px;
+    height: 25em;
+    border-radius: 10px;
+    box-shadow: 20px 24px  rgba(0, 0, 0,0.6);
+  
+}
+
+
+#contactbox h2{
+    color: white;
+    font-variant:small-caps ;
+        margin: 20px;
+        margin-top: 30px ;
+        font-size: 30px ;
+   
+   
+}
+#email,#password {
+    background-color: white;
+    border-radius: 9px;
+
+    border: none;
+    padding: 20px;
+    margin: 20px;
+    width: 29vh;
+    height: 10px;
+    font-size: medium;
+     font-variant: small-caps;
+}
+
+.btn{
+    border: none;
+    padding: 15px;
+    margin: 20px;
+    font-size: 18px;
+    font-variant: small-caps;
+    border-radius: 10px;
+    background-color: white;
+}
+.btn:hover{
+     background-color:black ;
+     color: white;
+}
+/* FOOTER SECTION ************************************************************************************ */
+
+footer{   
+    background-color: #6b0306;
+    padding:35px;
+    height: 42vh;
+    text-align: center;
+
+}
+#footerhead{
+    color: white;
+    padding: 10px;
+    margin-bottom:8vh ;
+    word-spacing: 4px;
+}
+#email1{
+    border: none;
+     padding: 15px;
+     width: 40vh;
+     border-radius: 5px;
+     font-size: 15px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-seri;
+     margin-bottom: 60px;
+}
+button{
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 5px;
+
+
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}   
+/* Icon **************************************************************** */
+
+
+#icon1,#icon2,#icon3,#icon4{
+    margin: 20px;   
+    position: relative;
+    width: 7vh;
+    left: 0px;
+    background-color: white;
+    padding:2px;
+    border-radius: 50%;  
+    
+}
