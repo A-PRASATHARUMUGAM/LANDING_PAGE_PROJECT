@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/accessories.css" type="text/css">
+           <!-- js*************************** -->
+           <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+           <!-- js*************************** -->
+
     <title>Accessories</title>
 </head>
 <body>
@@ -16,7 +20,24 @@
           <a href="collection.html" id="collection">Collections</a>
          <a href="accessories.html" id="accessories">Accessories</a>
          <a href="contact.html" id="contact" >Contact</a>
-       
+         <div class="box">
+
+            <div class="cart-count">0</div>
+            <ion-icon name="cart-outline" id="cart-icon"></ion-icon>
+      
+           </div>
+           <div class="cart ">
+            <div class="cart-tittle"> Cart Items</div>
+            <div class="cart-content">
+            </div>    
+            <div class="total">
+              <div class="total-tittle">Total</div>
+              <div class="total-price">Rs.0</div>
+            </div>
+            <a href="contact.html"> <button class="btn-buy" >Place Order</button></a>
+            <ion-icon name="close-outline" id="cart-close"></ion-icon>
+           </div>
+  
         </nav>
     </header>
     <div id="boxhead"> 
@@ -30,39 +51,90 @@
   <div  class="section2">
 
         <div id="imgbox">
-       <figure>
-            <img class="accessoriesimg" src="images/Ducky key puller a1.jpg" alt="accessoriesimage">
-            <figcaption>DUCKY KEY PULLER</figcaption>
+                         <!-- js****************** -->
+          <!-- <figure class="keyboard-box">
+            <img class="keyboard-img" src="images/STAR61.jpg" alt="keyboardstar61"  >
+            <figcaption class="keyboard-tittle" >STAR61</figcaption>
+     
+      
+            <div>
+              <span class="keyboard-price" >Rs.400</span>
+              <ion-icon name="cart-outline"  class="img-cart"></ion-icon>
+             </div>
+             <button class="add-cart">Add Cart</button>
+              
+      </figure> -->
+      <!-- js****************** -->
+
+       <figure  class="keyboard-box">
+            <img class="keyboard-img" src="images/Ducky key puller a1.jpg" alt="accessoriesimage">
+            <figcaption class="keyboard-tittle" >DUCKY KEY PULLER</figcaption>
+            <div id="key-box">
+                <span class="keyboard-price" >Rs.100</span>
+                <ion-icon name="cart-outline"  class="img-cart"></ion-icon>
+               </div>
+               <button class="add-cart">Add Cart</button>
         </figure>
 
-        <figure>
-            <img class="accessoriesimg" src="images/iDuster keyboard clean a3.webp" alt="accessoriesimage">
-            <figcaption>IDUSTER</figcaption>
-        </figure>
-         <figure>
-            <img class="accessoriesimg" src="images/key cap puller a4.jpg" alt="accessoriesimage">
-            <figcaption>KEY CAP PULLER</figcaption>
-        </figure>
-
-        <figure>
-            <img class="accessoriesimg" src="images/Keyboard cable a5.jpg" alt="accessoriesimage">
-            <figcaption>CABLE</figcaption>
+        <figure class="keyboard-box">
+            <img class="keyboard-img" src="images/iDuster keyboard clean a3.webp" alt="accessoriesimage">
+            <figcaption  class="keyboard-tittle">IDUSTER</figcaption>
+            <div  id="key-box">
+                <span class="keyboard-price" >Rs.200</span>
+                <ion-icon name="cart-outline"  class="img-cart"></ion-icon>
+               </div>
+               <button class="add-cart">Add Cart</button>
         </figure>
 
-        <figure>
-            <img class="accessoriesimg" src="images/keyboard caps a6.jpg" alt="accessoriesimage">
-            <figcaption>KEYBOARD CAPS</figcaption>
+         <figure class="keyboard-box">
+            <img class="keyboard-img" src="images/key cap puller a4.jpg" alt="accessoriesimage">
+            <figcaption  class="keyboard-tittle" >KEY CAP PULLER</figcaption>
+            <div  id="key-box">
+                <span class="keyboard-price" >Rs.50</span>
+                <ion-icon name="cart-outline"  class="img-cart"></ion-icon>
+               </div>
+               <button class="add-cart">Add Cart</button>
         </figure>
 
-        <figure>
-            <img class="accessoriesimg" src="images/Keyboard Tray a7.jpg" alt="accessoriesimage">
-            <figcaption>KEYBOARD TRAY</figcaption>
-        </figure>
+        <figure class="keyboard-box">
+            <img class="keyboard-img" src="images/Keyboard cable a5.jpg" alt="accessoriesimage">
+            <figcaption  class="keyboard-tittle">CABLE</figcaption>
+            <div  id="key-box">
+                <span class="keyboard-price" >Rs.400</span>
+                <ion-icon name="cart-outline"  class="img-cart"></ion-icon>
+               </div>
+               <button class="add-cart">Add Cart</button>
+        </figure class="keyboard-box">
+
+        <figure class="keyboard-box">
+            <img class="keyboard-img" src="images/keyboard caps a6.jpg" alt="accessoriesimage">
+            <figcaption  class="keyboard-tittle">KEYBOARD CAPS</figcaption>
+            <div  id="key-box">
+                <span class="keyboard-price" >Rs.370</span>
+                <ion-icon name="cart-outline"  class="img-cart"></ion-icon>
+               </div>
+               <button class="add-cart">Add Cart</button>
+        </figure class="keyboard-box">
+
+        <figure class="keyboard-box">
+            <img class="keyboard-img" src="images/Keyboard Tray a7.jpg" alt="accessoriesimage">
+            <figcaption  class="keyboard-tittle">KEYBOARD TRAY</figcaption>
+            <div  id="key-box">
+                <span class="keyboard-price" >Rs.400</span>
+                <ion-icon name="cart-outline"  class="img-cart"></ion-icon>
+               </div>
+               <button class="add-cart">Add Cart</button>
+        </figure class="keyboard-box">
         
-        <figure>
-            <img class="accessoriesimg" src="images/switches for keyboard a8.webp" alt="accessoriesimage">
-            <figcaption>SWITHCHES</figcaption>
-        </figure>
+        <figure class="keyboard-box">
+            <img class="keyboard-img" src="images/switches for keyboard a8.webp" alt="accessoriesimage">
+            <figcaption  class="keyboard-tittle">SWITHCHES</figcaption>
+            <div  id="key-box">
+                <span class="keyboard-price" >Rs.80</span>
+                <ion-icon name="cart-outline"  class="img-cart"></ion-icon>
+               </div>
+               <button class="add-cart">Add Cart</button>
+        </figure class="keyboard-box">
 
      </div>
   </div>
@@ -81,7 +153,7 @@
     <div >
      <label for="email"></label>
      <input type="email" name="email" id="email" placeholder="Enter your email">
-     <button type="button">Join</button>
+     <button type="button"  class="joinbtn" >Join</button>
     </div>
      <!-- ICON  ******************************************************* -->
      <a href=""><img src="icons/facebookblack.png" alt="icon" id="icon1"></a> 
@@ -90,6 +162,9 @@
  <a href=""><img src="icons/instagramblack.png" alt="icon" id="icon4"></a>  
    
 </footer>
+     <!-- js*************************** -->
+     <script src="./js/addcart.js"></script>
+     <!-- js*************************** -->
 
   </body>
   </html>
