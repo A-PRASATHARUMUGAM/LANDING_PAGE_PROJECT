@@ -658,7 +658,6 @@ button:hover{
     }
 
 
-
 /* End footer */
 
 /* End section 2 */
@@ -681,11 +680,15 @@ button:hover{
    #section3{
       margin-top: 25vh;
    }
-   .btn-buy{
-    margin-top:1vh;
+   /* End sections responsive       */
 
-  }
-      /* End sections responsive       */
+    /* cart_items */
+    
+        .btn-buy{
+            margin-top:1vh;
+            
+        }
+    /* End cart_items */
   
   }
    
@@ -696,7 +699,7 @@ button:hover{
   
   @media (max-width:500px){
 
-    /* navigation bar media query *********** */
+    /* cart items */
     .cart-remove{
      position: relative;
       bottom:3px;
@@ -711,10 +714,9 @@ button:hover{
  .btn-buy{
     margin-top:1.5vh;
 
-   
 
   }
-      /* End navigation   */
+      /* End cart_items  */
 
 
 
@@ -727,13 +729,10 @@ button:hover{
 }
 
 /* **************************** *\
-        #MEDIA  MAX-450PX 
+        #MEDIA  MAX-360PX 
 \* **************************** */
    
-@media (max-width:450px) {
-  
-    
-}
+
 /* cart items  */
     @media (max-width:360px){
   
