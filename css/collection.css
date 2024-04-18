@@ -234,11 +234,12 @@ font-size:10px;
     justify-content:center;
     align-items: center;
     flex-flow:wrap;
-
+    
 }
 .keyboard-img_box{
     margin:4vw;
     text-align: center;
+
 
 }
 
@@ -251,12 +252,11 @@ font-size:10px;
 
 
 /* js******************** */
-figcaption{
+.keyboard-tittle{
    font-weight: bold;
-   margin-bottom: 5px;
+   margin: 10px 0px 10px 0px;
    color: white;
-   font-size:2.2em;
-   
+   font-size:2em;
 
 }
 /* js******************** */
@@ -264,19 +264,16 @@ figcaption{
     display: flex;
     justify-content: center;
 }
-.img-cart{
-    margin-top: 4px;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-
-}
 .keyboard-price{
-    margin-top: 5px;
     color: white;
     font-weight: bold;
-    font-size: 15px;
-    margin-right: 10px;
+    font-size:1.5em;
+    margin:0px 5px 0px 0px ;
+}
+.img-cart{
+    text-align: center;
+    color: white;
+    font-size:1.8em;
 }
 .add-cart{
     cursor: pointer;
@@ -286,7 +283,7 @@ figcaption{
 
 /* Section 3 **************************************************************************************** */
 #section3{
-    margin-top: 5em;
+    margin-top:5em;
     background-color: black;
 
 }
@@ -323,12 +320,12 @@ footer{
 
 button{
     border: none;
+    border-radius:2px;
     background-color: white;
+    padding: 12px;
+    width:8em;
+    font-size:1.5em;
     font-weight: bold;
-    font-size: 15px;
-    padding: 15px;
-    border-radius: 5px;
-    font-variant: small-caps;
 }
 button:hover{
     background-color: black;
@@ -496,7 +493,22 @@ button:hover{
               /*  End cart items */
         
                 /*End  navigation   */
-        
+
+     .main-heading{
+
+          font-size: 2.5em;
+
+     }
+     .keyboard-tittle{
+        font-size:1.5em;
+
+     }
+     .keyboard-price{
+        font-size:1.2em;
+     }
+     .img-cart{
+        font-size:1.4em;
+     }
             
               
                         /* footer***********  */
@@ -562,6 +574,9 @@ button:hover{
           }
               /* End cart_items   */
         
+    .main-heading{
+    font-size:2em;
+    }
         
         
         /* footer  */
