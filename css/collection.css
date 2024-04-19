@@ -10,12 +10,12 @@ a{
 }
 body{
     background-image: url(../images/collectionbg.jpg);
+    background-attachment:fixed;
     background-size:cover;
-    background-repeat:no-repeat ;
-    background-position: center;
-    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position:center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
+    background-color: black;
 }
 /* header ************************************************************************************************* */
 
@@ -237,10 +237,8 @@ font-size:10px;
     
 }
 .keyboard-img_box{
-    margin:4vw;
+    margin: 4vw;
     text-align: center;
-
-
 }
 
 .keyboard-img{
@@ -263,6 +261,7 @@ font-size:10px;
 .keyboard-price_container{
     display: flex;
     justify-content: center;
+   
 }
 .keyboard-price{
     color: white;
@@ -340,6 +339,7 @@ button:hover{
     font-weight: bold;
     font-size:1.6em;
     padding:1em;
+    width:5em;
     border-radius: 5px;
 
 }
@@ -493,6 +493,7 @@ button:hover{
               /*  End cart items */
         
                 /*End  navigation   */
+            
 
      .main-heading{
 
@@ -577,6 +578,8 @@ button:hover{
     .main-heading{
     font-size:2em;
     }
+
+    
         
         
         /* footer  */
@@ -586,12 +589,14 @@ button:hover{
         
         /* End footer */
         }
+            
+        /* **************************** *\
+                #MEDIA  MAX-475PX 
+        \* **************************** */
 
         @media (max-width:475px){
-            .keyboard-img_box{
-                margin:6vw;
-            }
-
+          
+            
         }
         
         /* **************************** *\
@@ -613,6 +618,13 @@ button:hover{
         
           }
           /* end cart items  */
+          
+          .keyboard-img_box{
+            margin:2vw;
+            margin-bottom:4vh;
+        }
+
+       
         
         /* footer */
         
@@ -627,7 +639,10 @@ button:hover{
         
         .joinbtn{
             padding: 0.6em;
+            width:3.2em;
+    
         }
+        
         /* End footer */
         
         /* icons */
