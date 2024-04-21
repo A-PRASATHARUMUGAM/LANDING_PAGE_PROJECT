@@ -29,7 +29,6 @@ body{
  align-items: center;
  padding:20px ;
  font-weight: bold;
- font-size:10px;
  z-index: 1;
 
 }
@@ -51,12 +50,10 @@ body{
  #logo{
     position: fixed;
     left:10px;
-    font-size:1.6em;
 
  }
 .navbar li{
     display: inline-block;
-    font-size:1.6em;
 }
  #boxhead{
     height:58px;
@@ -686,8 +683,8 @@ button:hover{
         /* section 1 index page */
         /* navigation  */
 .navbar li{
-    font-size:0.7em;
-    padding: 1em;
+    font-size:0.5em;
+    padding:1em;
 }        
 /* End navigation  */
 .shop-button__box{
