@@ -29,58 +29,41 @@ body{
  align-items: center;
  padding:20px ;
  font-weight: bold;
+ font-size:10px;
  z-index: 1;
 
 }
 .navbar a{
     color: white;
     padding: 8px;
-    margin: 10px;
+    margin:10px;
     margin-inline:30px ;
     border-radius:2px;
 }
 
+
 #home:hover,#collection:hover,#accessories:hover,#contact:hover{
-   background-color: white;
-   color: black;
+    background-color: white;
+    color: black;
     transition: 0.5s;
  }
- /* #logo{
-    position: fixed;
-    left: 20px;
-    top:22px;
-    z-index: 2;
-    font-size: 1.2rem;
-    color: white;
-   
- } */
+
  #logo{
     position: fixed;
     left:10px;
+    font-size:1.6em;
 
  }
 .navbar li{
     display: inline-block;
+    font-size:1.6em;
 }
  #boxhead{
     height:58px;
 
  }
 
- .box{
-    cursor: pointer;
-    color: white;
-    display: flex;
-    justify-content:flex-end;
-    padding: 10px;
-    width:20vh ;
-    font-size: 5vh;
-    position: absolute;
-    right: 40px;
 
-
- 
- }
  .cart-count{
   position: fixed;
   top:13px;
@@ -90,7 +73,8 @@ body{
 
 
  }
-#cart-icon{
+#cart-icon,.box{
+    color: white;
     position: fixed;
     top:12px;
     right:65px;
@@ -699,6 +683,20 @@ button:hover{
 
   
   @media (max-width:500px){
+        /* section 1 index page */
+        /* navigation  */
+.navbar li{
+    font-size:0.7em;
+    padding: 1em;
+}        
+/* End navigation  */
+.shop-button__box{
+    position: relative;
+    top:52%;
+    left:12%;
+
+}
+        /* End section 1 index page */
 
     /* cart items */
     .cart-remove{

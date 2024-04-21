@@ -37,9 +37,10 @@
   
      <!-- section1 **************************************************************** -->
      <div class="section1">
-          <div id="contactbox">
-            <h2 id="formhead">Contact Us  </h2>
-            <form action="contact1.php" title="contact" method="post">
+          <div class="form-container">
+
+            <h2 class="form-title">Contact Us  </h2>
+            <form action="contact.html" title="contact" method="get">
          
 
             <div>
@@ -50,14 +51,20 @@
                 <label for="password"> </label>
                 <input type="email" name="email"  id="password" placeholder="Enter your email " >
             </div>
+            <div>
+              <label for="address"> </label>
+              <input type="text" name="address"  id="password" placeholder="Enter your address " >
+          </div>
 
             <div>
                 <label for="keyboardname"> </label>
-                <input type="text" name="keyname"  id="password" placeholder="Enter your keyboard name " >
+                <input type="text" name="keyname"  id="password" placeholder=" keyboard name " >
             </div>
+      
+ 
             <div>
                 <label for="price "> </label>
-                <input type="number" name="price"  id="password" placeholder="Enter your keyboard price " >
+                <input type="number" name="price"  id="password" placeholder="keyboard price " >
             </div>
  
             <button class="btn" type="submit">place order</button> 
@@ -66,7 +73,19 @@
      </div>
 
       <!-- js -->
-          <script src="js/addcart.js" ></script>
+          <script  lang="javascript" >
+            
+
+//  responsive menu bar
+const menu=document.querySelector('.menu')
+const menuList=document.querySelector('nav ul')
+menu.addEventListener('click',()=>{
+    menuList.classList.toggle('showmenu')
+})
+
+
+
+          </script>
       <!-- js -->
       
      </body>

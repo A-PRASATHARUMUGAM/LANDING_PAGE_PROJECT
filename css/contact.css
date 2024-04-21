@@ -15,7 +15,7 @@ body{
     background-attachment: fixed;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-/* header ************************************************************************************************* */
+/* header ************************************************* */
 
 .navbar{
     position: fixed;
@@ -27,99 +27,102 @@ body{
     align-items: center;
     padding:20px ;
     font-weight: bold;
+    font-size:10px;
     z-index: 1;
    
    }
    .navbar a{
        color: white;
        padding: 8px;
-       margin: 10px;
+       margin:10px;
        margin-inline:30px ;
        border-radius:2px;
    }
    
+   
    #home:hover,#collection:hover,#accessories:hover,#contact:hover{
-      background-color: white;
-      color: black;
+       background-color: white;
+       color: black;
        transition: 0.5s;
     }
+   
     #logo{
        position: fixed;
        left:10px;
+       font-size:1.6em;
+
    
     }
    .navbar li{
        display: inline-block;
+       font-size:1.6em;
    }
     #boxhead{
        height:58px;
    
     }
+    
    
       /* js************************ */
 
  
   
- /* section 1 form ************************************************************************************** */
+ /* section 1 form ******************************************* */
 
 .section1{
-    padding-top:10px; 
-    height: 35em;
+    width: 100vw;
+    height:91vh;
+    font-size:10px;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 20vh;
-    
+    justify-content: center;
+    align-items:center;
+
 }
 
-#contactbox{
-  background-color: rgba(0, 0, 0,0.9);
+.form-container{
+    padding: 20px; 
     text-align: center;
-    padding: 20px;
-    height: 32em;
-    width: 25em;
-    border-radius: 10px;
-    box-shadow: 20px 24px  rgba(0, 0, 0,0.6);
-    margin-top: 15vh;
-  
+    border-radius:4px;
+    background-color: rgba(0, 0, 0,0.9);
+    box-shadow: 20px 20px rgba(0, 0, 0,0.25);
 }
 
-#contactbox h2{
+.form-title{
     color: white;
-    font-variant:small-caps ;
-        margin: 20px;
-        margin-top: 10px ;
-        font-size: 30px ;
-   
-   
+    padding:5px;
+    word-spacing: 4px;
+    font-size:2.5em;   
 }
 
 #email,#password {
-    background-color: white;
-    border-radius: 9px;
+    margin:15px;
+    padding:1.2em;
+    min-width:30vw;
+    max-width:400px;
     border: none;
-    padding: 20px;
-    margin: 20px;
-    width: 40vh;
-    height: 10px;
-    font-size: medium;
-     font-variant: small-caps;
+    border-radius:2px;
+    background-color: white;
 }
-
+::placeholder{
+    font-size:1.2em;
+}
 .btn{
+    margin: 5px;
     border: none;
-    padding: 15px;
-    margin: 20px;
-    font-size: 18px;
-    font-variant: small-caps;
-    border-radius: 10px;
-    background-color: white;
+    padding:0.6em;
+    color:black;
+    background-color:white;
+    font-weight: bold;
+    font-size:1.6em;
+    border-radius:2px;
 }
 .btn:hover{
      background-color:black ;
      color: white;
      transition: 0.5s;
 }
+
+            /* mobile responsive menu bar */
 .menu{
     position: absolute;
     top:22px;
@@ -199,6 +202,37 @@ ul{
                         
                           
 @media (max-width:500px){
+            /* section 1 index page */
+        /* navigation  */
+.navbar li{
+    font-size:0.7em;
+    padding: 1em;
+}        
+/* End navigation  */
+
+.shop-button__box{
+    position: relative;
+    top:52%;
+    left:12%;
+
+}
+        /* End section 1 index page */
+        
+.form-title{
+    font-size:2em;
+}
+    #email,#password {
+ 
+        padding:0.8em;
+      
+      
+    }
+    ::placeholder{
+        font-size:1em;
+    }
+    .btn{
+        font-weight:600;
+    }
 }
                             
 
