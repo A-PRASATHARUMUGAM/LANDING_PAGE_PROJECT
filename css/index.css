@@ -558,7 +558,7 @@ button:hover{
     position: fixed;
     top:16px;
     right:35px;
-   font-size:30px;
+    font-size:30px;
 }
 .cart-count{
     position: fixed;
@@ -573,7 +573,6 @@ button:hover{
 
 .cart{
     width:40vw;
-    border:1px solid red;
     font-size:10px
 }
 .cart-tittle{
