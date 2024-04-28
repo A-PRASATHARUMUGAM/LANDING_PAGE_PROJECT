@@ -1,0 +1,249 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-variant:small-caps;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url(../images/contactbg5.jpg);
+    background-size:cover;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* header ************************************************* */
+
+.navbar{
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(0, 0, 0);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding:20px ;
+    font-weight: bold;
+    z-index: 1;
+   
+   }
+   .navbar a{
+       color: white;
+       padding: 8px;
+       margin:10px;
+       margin-inline:30px ;
+       border-radius:2px;
+   }
+   
+   
+   #home:hover,#collection:hover,#accessories:hover,#contact:hover{
+       background-color: white;
+       color: black;
+       transition: 0.5s;
+    }
+   
+    #logo{
+       position: fixed;
+       left:10px;
+   
+   
+    }
+   .navbar li{
+       display: inline-block;
+
+   }
+    #boxhead{
+       height:58px;
+   
+    }
+    
+   
+      /* js************************ */
+
+ 
+  
+ /* section 1 form ******************************************* */
+
+.section1{
+    width: 100vw;
+    height:91vh;
+    font-size:10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.form-container{
+    padding: 20px; 
+    text-align: center;
+    border-radius:4px;
+    background-color: rgba(0, 0, 0,0.9);
+    box-shadow: 20px 20px rgba(0, 0, 0,0.25);
+}
+
+.form-title{
+    color: white;
+    padding:5px;
+    word-spacing: 4px;
+    font-size:2.5em;   
+}
+
+#email,#password {
+    margin:15px;
+    padding:1.2em;
+    min-width:30vw;
+    max-width:400px;
+    border: none;
+    border-radius:2px;
+    background-color: white;
+}
+::placeholder{
+    font-size:1.2em;
+}
+.btn{
+    margin: 5px;
+    border: none;
+    padding:0.6em;
+    color:black;
+    background-color:white;
+    font-weight: bold;
+    font-size:1.6em;
+    border-radius:2px;
+}
+.btn:hover{
+     background-color:black ;
+     color: white;
+     transition: 0.5s;
+}
+
+            /* mobile responsive menu bar */
+.menu{
+    position: absolute;
+    top:22px;
+    left:25px;
+    cursor: pointer;
+    display:none;
+}
+.menu-line{
+ height: 2px;
+ width:20px;
+ border-radius:50px;
+ background-color: white;
+ margin-bottom: 5px;
+}
+
+/* starting media query */
+
+
+            /* **************************** *\
+                    #MEDIA  MAX-900PX 
+            \* **************************** */
+        
+      @media (max-width:900px){
+            
+/* navigation  responsive start  */
+                        
+#logo{
+    position: relative;
+    left: 0px;
+    right: 0px;
+    word-spacing:5px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+                                    
+.navbar{ 
+    flex-direction:column ;
+    align-items: center;
+    font-size: 20px;
+    padding: 0px 20px 0px 20px;                                                               
+}
+                         
+.navbar li{
+    display: block;
+    padding:20px;
+    text-align: center;
+}
+                                       
+ul{
+    display: none;                                      
+}
+                        
+            /* js auto add  class */
+.showmenu{
+    display: block;
+}                           
+.menu{
+    display: block;                                 
+}
+             /* js auto add  class */
+                                           
+}
+                       
+
+            /* **************************** *\
+                    #MEDIA  MAX-850PX 
+            \* **************************** */
+                        
+@media (max-width:850px) {
+}
+                            
+                           
+            /* **************************** *\
+                    #MEDIA  MAX-500PX 
+            \* **************************** */
+                        
+                          
+@media (max-width:500px){
+            /* section 1 index page */
+        /* navigation  */
+.navbar li{
+    font-size:0.7em;
+    padding: 1em;
+}        
+/* End navigation  */
+
+.shop-button__box{
+    position: relative;
+    top:52%;
+    left:12%;
+
+}
+        /* End section 1 index page */
+        
+.form-title{
+    font-size:2em;
+}
+    #email,#password {
+ 
+        padding:0.8em;
+      
+      
+    }
+    ::placeholder{
+        font-size:1em;
+    }
+    .btn{
+        font-weight:600;
+    }
+}
+                            
+
+            /* **************************** *\
+                    #MEDIA  MAX-475PX 
+            \* **************************** */
+                    
+@media (max-width:475px){
+}    
+            /* **************************** *\
+                    #MEDIA  MAX-360PX 
+            \* **************************** */
+
+@media (max-width:360px){
+}
+
