@@ -21,13 +21,13 @@ function loadContent(){
     //Remove Food Items From Cart
     let btnRemove=document.querySelectorAll('.cart-remove');
     btnRemove.forEach((btn)=>{
-btn.addEventListener('click',removeItem);
+    btn.addEventListener('click',removeItem);
     });
 
     //Product Item Change Event
     let qtyElements=document.querySelectorAll('.cart-quantity');
     qtyElements.forEach((input)=>{
-input.addEventListener('change',changeQty);
+     input.addEventListener('change',changeQty);
     });
     //Product cart
     let cartBtns=document.querySelectorAll('.add-cart');
@@ -100,7 +100,6 @@ function createCartProduct(tittle,price,imgSrc){
               </div>
               <ion-icon name="trash" class="cart-remove"></ion-icon>
             </div>
-
     `;
 
 }

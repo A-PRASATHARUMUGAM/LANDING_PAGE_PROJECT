@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-variant:small-caps;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url(../images/contactbg5.jpg);
+    background-size:cover;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 16px;
+}
+/* header ************************************************* */
+
+.navbar{
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(0, 0, 0);
+    display:flex  ;
+    justify-content:center;
+    align-items: center;
+    padding:20px ;
+    font-weight: bold;
+    z-index: 1;
+   
+   }
+   .navbar a {
+       color: white;
+       padding: 8px;
+       margin:10px;
+       margin-inline:30px ;
+       border-radius:2px;
+   }
+   
+  .navbar-list{
+   padding: 0 !important;
+   margin: 0 !important;
+   }
+   #home:hover,#collection:hover,#accessories:hover,#orders:hover{
+       background-color: white;
+       color: black;
+       transition: 0.5s;
+    }
+   
+    #logo{
+       position: fixed;
+       left:10px;
+   
+   
+    }
+   .navbar li{
+       display: inline-block;
+
+   }
+    #boxhead{
+       height:58px;
+   
+    }
+    
+   
+      /* js************************ */
+
+ 
+  
+ /* Main Container Start here*/
+
+ .main-container{
+    margin-top:20px;
+    width: 100%;
+ }
+
+ /* Export Button  */
+.export-container{
+    text-align: end;
+    margin:10px 6px;
+    cursor: pointer;
+}
+.export-btn{
+        padding: 10px;
+    border-radius:6px;
+    border: none;    
+    font-size:0.8rem;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
+}
+.export-btn:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in;
+}
+
+
+/* Search Bar  */
+.search-bar-container {
+  margin: 10px;
+}
+
+.search-inputs-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+
+}
+
+.search-field-container {
+  display: flex;
+
+}
+
+/* Input */
+.search-input {
+  flex: 1;
+  width: 40vw;
+  padding:8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Button */
+.search-btn {
+  padding: 10px 16px;
+  margin-left: 6px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+    cursor: pointer;
+}
+
+/* Sort orders */
+.sort-orders-container{
+    display: flex;
+    align-items: center;
+    font-weight: bold ;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding-inline:12px;
+    height:40px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.sort-orders-container:hover{
+
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+        cursor: pointer;
+}
+.sort-orders-container select {
+  margin-left:4px ;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+
+
+.product-img {
+  width: 80px;      
+  height: 70px;     
+  object-fit: cover;
+  border-radius: 5px; 
+}
+
+
+
+/* Orders Container  */
+
+.orders-table-header tr > th{
+    background-color: rgba(0, 0, 0, 0.822) ;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    color: white ;
+}
+
+.orders-table-body tr> td{
+    background-color:whitesmoke;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+}
+.badge{
+    font-size: 1rem ;
+}
+
+/* Order buttons  */
+
+.complete-btn{
+     background-color: rgb(0, 162, 255);
+     color: white;
+     border: none;
+     padding: 2px;
+     border-radius: 4px;
+     font-weight: bold;
+}
+
+.cancel-btn{
+    background-color: rgb(209, 6, 6);
+    color: white;
+     border: none;
+     padding: 2px;
+     border-radius: 4px;
+     font-weight: bold;
+}
+.invoice-btn{
+      background-color: rgb(107, 107, 107); 
+      color: white;
+       border: none;
+     padding: 2px;
+     border-radius: 4px;
+     font-weight: bold;
+
+}
+/* Hambarger Menu */
+.menu{
+    position: absolute;
+    top:22px;
+    left:25px;
+    cursor: pointer;
+    display:none;
+}
+.menu-line{
+ height: 2px;
+ width:20px;
+ border-radius:50px;
+ background-color: white;
+ margin-bottom: 5px;
+
+}
+
+ /* Main Container End here*/
+
+
+
+ 
+
+
+/* starting media query */
+
+
+            /* **************************** *\
+                    #MEDIA  MAX-900PX 
+            \* **************************** */
+        
+      @media (max-width:900px){
+            
+/* navigation  responsive start  */
+                        
+#logo{
+    position: relative;
+    left: 0px;
+    right: 0px;
+    word-spacing:5px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+                                    
+.navbar{ 
+    flex-direction:column ;
+    align-items: center;
+    font-size: 20px;
+    padding: 0px 20px 0px 20px;                                                               
+}
+                         
+.navbar li{
+    display: block;
+    padding:20px;
+    text-align: center;
+}
+                                       
+ul{
+    display: none;                                      
+}
+                        
+            /* js auto add  class */
+.showmenu{
+    display: block;
+}                           
+.menu{
+    display: block;                                 
+}
+             /* js auto add  class */
+                                           
+}
+                       
+                     
+                           
+            /* **************************** *\
+                    #MEDIA  MAX-500PX 
+            \* **************************** */
+                        
+                          
+@media (max-width:500px){
+            /* section 1 index page */
+        /* navigation  */
+.navbar li{
+    font-size:0.7em;
+    padding: 1em;
+}        
+/* End navigation  */
+
+.shop-button__box{
+    position: relative;
+    top:52%;
+    left:12%;
+
+}
+        /* End section 1 index page */
+        
+.form-title{
+    font-size:2em;
+}
+    #email,#password {
+ 
+        padding:0.8em;
+      
+      
+    }
+    ::placeholder{
+        font-size:1em;
+    }
+    .btn{
+        font-weight:600;
+    }
+}
+                            
+
+            /* **************************** *\
+                    #MEDIA  MAX-475PX 
+            \* **************************** */
+                    
+@media (max-width:475px){
+
+    
+    .search-inputs-container{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+.search-field-container{
+  width: 100%;
+}
+
+.search-input{
+      flex: 1;
+  min-width: 150px;  
+  max-width: 400px;
+  
+
+}
+}    
+            /* **************************** *\
+                    #MEDIA  MAX-360PX 
+            \* **************************** */
+
+@media (max-width:360px){
+}

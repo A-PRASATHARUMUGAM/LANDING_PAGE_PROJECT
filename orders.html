@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/contact.css" type="text/css">
-       <!-- js*************************** -->
-       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-       <!-- js*************************** -->
-    <title>Contact</title>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Bootstrap Icons -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+      <!-- my css -->
+      <link rel="stylesheet" href="assets/css/order.css" type="text/css">
+
+    <title>Order Page </title>
 </head>
 <body>
   <header>
       
     <nav class="navbar"> 
       <a href="index.html" id="logo" >Landing Page</a>
-      <ul>           
+
+      <ul class="navbar-list">           
         <li><a href="index.html" id="home" >Home</a> </li>
         <li><a href="collection.html" id="collection" >Collections</a></li>
         <li><a href="accessories.html" id="accessories" >Accessories</a></li>
-       <li><a href="orders.html" id="orders" >Orders</a></li>
+        <li><a href="orders.html" id="orders" >Orders</a></li>
 
-    </ul>
-    
-    
+        </ul>
+
        <div class="menu">
         <div class="menu-line"></div>
         <div class="menu-line"></div>
@@ -35,57 +40,174 @@
 
    </div> 
   
-     <!-- section1 **************************************************************** -->
-     <div class="section1">
-          <div class="form-container">
+<!-- Main Container Start-->
+<div class="main-container">
 
-            <h2 class="form-title">Contact Us  </h2>
-            <form action="contact.html" title="contact" method="get">
-         
+<!-- Export -->
+       <div class="export-container">
 
-            <div>
-                <label for="firstname"></label>
-                <input type="text" name="first_name" id="email" placeholder="Enter your name" required>
-            </div>
-            <div>
-                <label for="password"> </label>
-                <input type="email" name="email"  id="password" placeholder="Enter your email " required>
-            </div>
-            <div>
-              <label for="address"> </label>
-              <input type="text" name="address"  id="password" placeholder="Enter your address " required>
-          </div>
+            <button title="exportbtn" class="export-btn" >   
+                <i class="bi bi-file-earmark-arrow-down fw-bold"></i>
+                Export Order List 
+            </button>
+        </div>
 
-            <div>
-                <label for="keyboardname"> </label>
-                <input type="text" name="keyname"  id="password" placeholder=" keyboard name " required>
+    <!-- Search Bar Container-->
+    <div class="search-bar-container">
+    
+        <!-- Search Input Container  -->
+        <div class="search-inputs-container">
+
+            <div class="search-field-container">
+            <!-- Search bar field -->
+            <input title="searchbar"  type="search" class="search-input">
+
+            <!--Search bar button  -->
+                <div>
+                    <button title="searchbtn" class="search-btn">Search now</button>
+                </div>
+
             </div>
+
+            <!-- Sort orders  -->
+                <div class="sort-orders-container">
+
+                    <label for="">Sort By: </label>
+                    
+                    <select title="Sort Order by Name, Price, Date" name="" id="" >
+                            <option value="name">Name</option>
+                            <option value="price">Price</option>
+                            <option value="date">Date</option>
+                    </select>
+
+                </div>
+                
+        </div>
+           
+    </div>
+
+
+   <!-- Orders Container -->
+  <div class="container-fluid">
+
+    <!-- Orders Table -->
+    <div class="table-responsive">
+
+      <table class="table align-middle text-center">
+
+        <thead class="orders-table-header ">
+          <tr >
+            <th class="th-first" scope="col ">Product</th>
+            <th scope="col">Price</th>
+            <th scope="col">Payment</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        
+        <tbody class="orders-table-body ">
+
+
+          <!-- Product Item 1 -->
+          <tr>
+            <!-- Product Details -->
+            <td class="text-start">
+              <div class="fw-bold">Prasath</div>
+              <small class="text-muted">Order ID: 32345 | Date: 3 OCT</small>
+
+                <div class="d-flex align-items-center mt-2">
+                <img src="assets/images/key cap puller a4.jpg" class="product-img me-2" alt="Product">
+                <div>
+                    <div>Keyboard</div>
+                    <small>Qty: 1</small>
+                </div>
+                </div>
+
+
+            </td>
+
+            <!-- Price -->
+            <td>
+              <span class="fw-semibold">$500</span>
+            </td>
+
+            <!-- Payment -->
+            <td>
+              <span class="badge bg-success">Cash on Delivery</span>
+            </td>
+
+            <!-- Actions -->
+          <td>
+        <div class="d-flex flex-column gap-1">
+            <button  class="complete-btn btn-sm ">Complete</button>
+            <button  class="cancel-btn  btn-sm">Cancel Order</button>
+            <button  class="invoice-btn  btn-sm ">Invoice</button>
+        </div>
+        </td>
+          </tr>
+
+    <!-- Product Item 2-->
+          <tr>
+            <!-- Product Details -->
+            <td class="text-start">
+              <div class="fw-bold">Prasath</div>
+              <small class="text-muted">Order ID: 32345 | Date: 3 OCT</small>
+
+                <div class="d-flex align-items-center mt-2">
+                <img src="assets/images/Keyboard cable a5.jpg" class="product-img me-2" alt="Product">
+                <div>
+                    <div>Keyboard</div>
+                    <small>Qty: 1</small>
+                </div>
+                </div>
+
+
+            </td>
+
+            <!-- Price -->
+            <td>
+              <span class="fw-semibold">$500</span>
+            </td>
+
+            <!-- Payment -->
+            <td>
+              <span class="badge bg-success">Cash on Delivery</span>
+            </td>
+
+            <!-- Actions -->
+          <td>
+        <div class="d-flex flex-column gap-1">
+            <button  class="complete-btn btn-sm ">Complete</button>
+            <button  class="cancel-btn  btn-sm">Cancel Order</button>
+            <button  class="invoice-btn  btn-sm ">Invoice</button>
+        </div>
+        </td>
+          </tr>
+
       
- 
-            <div>
-                <label for="price "> </label>
-                <input type="number" name="price"  id="password" placeholder="keyboard price " required>
-            </div>
- 
-            <button class="btn" type="submit">place order</button> 
-            </form>
-          </div>
-     </div>
 
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+    
+</div>
+<!-- Main Container End -->
+
+
+<!-- Bootstrap -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
       <!-- js -->
-          <script  lang="javascript" >
-            
-
-//  responsive menu bar
-const menu=document.querySelector('.menu')
-const menuList=document.querySelector('nav ul')
-menu.addEventListener('click',()=>{
-    menuList.classList.toggle('showmenu')
-})
-
-
-
-          </script>
+<script  lang="javascript" >            
+            //  responsive menu bar
+            const menu=document.querySelector('.menu')
+            const menuList=document.querySelector('nav ul')
+            menu.addEventListener('click',()=>{
+                menuList.classList.toggle('showmenu')
+            })
+</script>
       <!-- js -->
       
      </body>
