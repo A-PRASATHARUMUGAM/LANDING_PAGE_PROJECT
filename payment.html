@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/payment.css">
+  <title>Payment Option</title>
+</head>
+<body>
+
+
+<div class="main-container">
+
+  <div class="main-title-container">
+    <h3 class="main-title">Select Payment Method</h3>
+  </div>
+
+<div class="payment-buttons d-flex gap-2">
+  <button type="button" id="codBtn" class="payment-btn">Cash on Delivery</button>
+  <button type="button" id="onlineBtn" class="payment-btn">Online Payment</button>
+</div>
+
+  <div class="back-button-container mt-2">
+    <a href="./index.html">
+      <button type="button" class="back-btn">Back</button>
+    </a>
+  </div>
+
+</div>
+
+
+
+<!-- COD Modal -->
+<div class="cod-modal" id="codModal">
+  <form class="cod-content">
+
+    <h3>Cash on Delivery</h3>
+    <div>
+          <input type="text" placeholder="First Name">
+    </div>
+
+    <div>
+    <input type="text" placeholder="Mobile Number">
+    </div>
+
+    <div>
+      <input type="email" placeholder="Email Address">
+
+    </div>
+   
+    <div>
+    <textarea placeholder="Enter Your Address"></textarea>
+    </div>
+    <div>
+    <input type="text" placeholder="State">
+    </div>
+    <div>
+    <input type="text" placeholder="City">  
+    </div>
+    <div>
+    <input type="text" placeholder="Pincode">
+    </div>
+    <div>
+    <input type="text" placeholder="Landmark">
+    </div>
+
+   <div class="cod-checkbox">
+    <input type="checkbox" id="cod-confirm">
+    <label for="cod-confirm" class="cod-confirm">Cash on Delivery</label>
+  </div>
+    <button type="submit" class="place-btn">Place Order</button>
+    <button type="button" class="cod-close" onclick="closeCOD()">Close</button>
+  </form>
+</div>
+
+<!-- Online Payment Modal -->
+<div class="scanner-modal" id="scannerModal">
+  <div class="scanner-content">
+    <h3>Scan to Pay via Google Pay</h3>
+    <img src="assets/images/qr_img/qr.jpg" alt="QR Code" />
+    <p>UPI ID: example@okaxis</p>
+    <button class="close-btn" onclick="closeScanner()">Close</button>
+  </div>
+</div>
+
+
+
+<!-- Bootstarp -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- Script -->
+<script>
+  const codBtn = document.getElementById("codBtn");
+  const onlineBtn = document.getElementById("onlineBtn");
+  const codModal = document.getElementById("codModal");
+  const scannerModal = document.getElementById("scannerModal");
+
+  codBtn.addEventListener("click", () => {
+    codModal.style.display = "flex";
+    scannerModal.style.display = "none";
+  });
+
+  onlineBtn.addEventListener("click", () => {
+    scannerModal.style.display = "flex";
+    codModal.style.display = "none";
+  });
+
+  function closeCOD() {
+    codModal.style.display = "none";
+  }
+
+  function closeScanner() {
+    scannerModal.style.display = "none";
+  }
+</script>
+
+</body>
+</html>

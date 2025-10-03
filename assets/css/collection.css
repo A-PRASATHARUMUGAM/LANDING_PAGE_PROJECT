@@ -40,7 +40,7 @@ body{
    }
    
    
-   #home:hover,#collection:hover,#accessories:hover,#contact:hover{
+   #home:hover,#collection:hover,#accessories:hover,#orders:hover{
        background-color: white;
        color: black;
        transition: 0.5s;

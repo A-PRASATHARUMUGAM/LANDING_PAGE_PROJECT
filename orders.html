@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/contact.css" type="text/css">
+       <!-- js*************************** -->
+       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+       <!-- js*************************** -->
+    <title>Contact</title>
+</head>
+<body>
+  <header>
+      
+    <nav class="navbar"> 
+      <a href="index.html" id="logo" >Landing Page</a>
+      <ul>           
+        <li><a href="index.html" id="home" >Home</a> </li>
+        <li><a href="collection.html" id="collection" >Collections</a></li>
+        <li><a href="accessories.html" id="accessories" >Accessories</a></li>
+       <li><a href="orders.html" id="orders" >Orders</a></li>
+
+    </ul>
+    
+    
+       <div class="menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+       </div>
+
+      </nav>  
+  </header>
+  <div id="boxhead"> 
+
+   </div> 
+  
+     <!-- section1 **************************************************************** -->
+     <div class="section1">
+          <div class="form-container">
+
+            <h2 class="form-title">Contact Us  </h2>
+            <form action="contact.html" title="contact" method="get">
+         
+
+            <div>
+                <label for="firstname"></label>
+                <input type="text" name="first_name" id="email" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="password"> </label>
+                <input type="email" name="email"  id="password" placeholder="Enter your email " required>
+            </div>
+            <div>
+              <label for="address"> </label>
+              <input type="text" name="address"  id="password" placeholder="Enter your address " required>
+          </div>
+
+            <div>
+                <label for="keyboardname"> </label>
+                <input type="text" name="keyname"  id="password" placeholder=" keyboard name " required>
+            </div>
+      
+ 
+            <div>
+                <label for="price "> </label>
+                <input type="number" name="price"  id="password" placeholder="keyboard price " required>
+            </div>
+ 
+            <button class="btn" type="submit">place order</button> 
+            </form>
+          </div>
+     </div>
+
+      <!-- js -->
+          <script  lang="javascript" >
+            
+
+//  responsive menu bar
+const menu=document.querySelector('.menu')
+const menuList=document.querySelector('nav ul')
+menu.addEventListener('click',()=>{
+    menuList.classList.toggle('showmenu')
+})
+
+
+
+          </script>
+      <!-- js -->
+      
+     </body>
+     </html>    
